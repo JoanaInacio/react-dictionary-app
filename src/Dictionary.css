@@ -1,0 +1,38 @@
+.Dictionary {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.Dictionary form {
+  display: flex;
+  gap: 10px;
+}
+
+.Dictionary input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.Dictionary input:focus {
+  outline: none;
+  border-color: #4dd0e1;
+}
+
+.Dictionary button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4dd0e1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Dictionary button:hover {
+  background-color: #26c6da;
+}
