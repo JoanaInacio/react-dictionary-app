@@ -1,74 +1,159 @@
 .Dictionary {
-  max-width: 500px;
-  margin: 30px auto;
-  text-align: center;
+  margin-bottom: 14px;
+}
+
+.search-card {
+  background: #f6fdff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.search-heading {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e7c8b;
 }
 
 .Dictionary form {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .Dictionary input {
   flex: 1;
   padding: 10px 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #cfeef3;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .Dictionary input:focus {
   outline: none;
-  border-color: #4dd0e1;
+  border-color: #26c6da;
 }
 
 .Dictionary button {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  background-color: #4dd0e1;
+  background-color: #26c6da;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 .Dictionary button:hover {
-  background-color: #26c6da;
-}
-.Results {
-  max-width: 500px;
-  margin: 30px auto;
-  text-align: left;
+  background-color: #1aa3b5;
 }
 
-.Results .word {
-  font-size: 32px;
-  color: #26c6da;
-  margin-bottom: 0;
+.search-hint {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #8aa1a6;
 }
 
-.Results .phonetic {
-  color: #888;
+.word-card {
+  background: #f6fdff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.word-card .word {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0e7c8b;
+}
+
+.word-card .phonetic {
+  font-size: 15px;
   font-style: italic;
+  color: #8aa1a6;
+}
+
+.phonetic-button {
+  margin-left: auto;
+  background: #26c6da;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.phonetic-button:hover {
+  background: #1aa3b5;
 }
 
 .Meaning {
-  margin-top: 20px;
+  background: #f6fdff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .Meaning .part-of-speech {
+  margin: 0 0 6px;
+  font-size: 14px;
   font-weight: 700;
-  color: #444;
-  margin-bottom: 4px;
+  color: #1aa3b5;
 }
 
 .Meaning .definition {
-  margin: 4px 0;
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #2d3a3d;
+  line-height: 1.5;
 }
 
 .Meaning .example {
-  color: #888;
+  margin: 0 0 6px;
+  font-size: 14px;
   font-style: italic;
-  margin-top: 4px;
+  color: #8aa1a6;
+}
+
+.Meaning .synonyms {
+  margin: 0;
+  font-size: 13px;
+  color: #5f6e71;
+}
+
+.Meaning .synonyms strong {
+  color: #1aa3b5;
+}
+
+.Photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.Photos .photo {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.Photos .photo:hover {
+  transform: scale(1.03);
 }
